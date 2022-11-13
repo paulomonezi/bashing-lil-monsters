@@ -9,6 +9,13 @@ for (let i = 0; i < collisions.length; i += 70) {
     collisionsMap.push(collisions.slice(i, 70 + i))
 }
 
+const battleZonesMap = []
+for (let i = 0; i < battleZonesData.length; i += 70) {
+    battleZonesMap.push(battleZonesData.slice(i, 70 + i))
+}
+
+console.log(battleZonesMap)
+
 const boundaries = []
 const offset = {
     x: -735,
@@ -17,7 +24,7 @@ const offset = {
 
 collisionsMap.forEach((row, i) => {
     row.forEach((symbol, j) => {
-        if (symbol == 1025)
+        if (symbol === 1025)
             boundaries.push(
                 new Boundary({
                     position: {
@@ -28,6 +35,24 @@ collisionsMap.forEach((row, i) => {
             )
     })
 })
+
+const battleZones = []
+
+battleZonesMap.forEach((row, i) => {
+    row.forEach((symbol, j) => {
+        if (symbol === 1025)
+            battleZones.push(
+                new Boundary({
+                    position: {
+                        x: j * Boundary.width + offset.x,
+                        y: i * Boundary.height + offset.y
+                    }
+                })
+            )
+    })
+})
+
+console.log(battleZones)
 
 const image = new Image()
 image.src = './src/images/PelletTown.png'
@@ -104,15 +129,15 @@ function rectangularCollision({ rectangle1, rectangle2 }) {
         rectangle1.position.y <= rectangle2.position.y + rectangle2.height &&
         rectangle1.position.y + rectangle1.height >= rectangle2.position.y
     )
-
 }
 function animate() {
     window.requestAnimationFrame(animate)
     background.draw()
     boundaries.forEach(boundary => {
         boundary.draw()
-
-
+    })
+    battleZones.forEach(battleZone => {
+        battleZone.draw()
     })
     player.draw()
     foreground.draw()
