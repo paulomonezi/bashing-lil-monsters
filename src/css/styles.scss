@@ -14,10 +14,10 @@ h1 {
 button {
   border: 0;
   font-size: 16px;
-}
-button:hover {
-  background-color: #ddd;
-  cursor: pointer;
+  &:hover {
+    background-color: #ddd;
+    cursor: pointer;
+  }
 }
 
 #container {
@@ -60,4 +60,4 @@ button:hover {
   display: flex;
   justify-content: center;
   align-items: center;
-}/*# sourceMappingURL=styles.css.map */
+}
