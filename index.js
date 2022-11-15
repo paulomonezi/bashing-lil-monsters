@@ -147,6 +147,9 @@ function animate() {
     player.draw()
     foreground.draw()
 
+    player.moving = false
+    let moving = true
+
     if (battle.initiated) return
     //activate a battle
     if (keys.w.pressed || keys.a.pressed || keys.s.pressed || keys.d.pressed) {
@@ -173,13 +176,23 @@ function animate() {
             ) {
                 console.log('Activate Battle')
                 battle.initiated = true
+                gsap.to('#overlappingDiv', {
+                    opacity: 1,
+                    repeat: 3,
+                    yoyo: true,
+                    duration: 0.4,
+                    onComplete() {
+                        gsap.to('#overlappingDiv', {
+                            opacity: 1,
+                            duration: 0.4
+                        })
+                    }
+                })
                 break
             }
         }
     }
 
-    player.moving = false
-    let moving = true
     if (keys.w.pressed && lastKey === 'w') {
         player.moving = true
         player.image = player.sprites.up
