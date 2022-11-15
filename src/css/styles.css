@@ -1,21 +1,18 @@
 * {
   font-family: "Press Start 2P", cursive;
 }
-
-body {
+* body {
   background-color: #000;
 }
-
-h1 {
+* body h1 {
   margin: 0;
   font-size: 16px;
 }
-
-button {
+* body button {
   border: 0;
   font-size: 16px;
 }
-button:hover {
+* body button:hover {
   background-color: #ddd;
   cursor: pointer;
 }
@@ -25,8 +22,7 @@ button:hover {
   position: relative;
   height: 576px;
 }
-
-#overlappingDiv {
+#container #overlappingDiv {
   background-color: #000;
   position: absolute;
   top: 0;
@@ -36,8 +32,7 @@ button:hover {
   opacity: 0;
   pointer-events: none;
 }
-
-#battleOptions {
+#container #battleOptions {
   background-color: #fff;
   height: 140px;
   position: absolute;
@@ -47,17 +42,65 @@ button:hover {
   border-top: 4px #000 solid;
   display: flex;
 }
-
-#moves {
+#container #battleOptions #moves {
   width: 66.66%;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
 }
-
-#moveType {
+#container #battleOptions #moveType {
   border-left: 4px #000 solid;
   width: 33.33%;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+#container #enemyBattleInfo {
+  background-color: #fff;
+  width: 250px;
+  position: absolute;
+  top: 50px;
+  left: 50px;
+  border: 4px #000 solid;
+  padding: 12px;
+}
+#container #enemyBattleInfo #enemyHealthBarWrapper {
+  position: relative;
+}
+#container #enemyBattleInfo #enemyHealthBarWrapper #enemyHealthBar {
+  height: 5px;
+  margin-top: 10px;
+  background-color: #ccc;
+}
+#container #enemyBattleInfo #enemyHealthBarWrapper #enemyFullHealthBar {
+  height: 5px;
+  background-color: #008000;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+}
+#container #playerBattleInfo {
+  background-color: #fff;
+  width: 250px;
+  position: absolute;
+  top: 330px;
+  right: 50px;
+  border: 4px #000 solid;
+  padding: 12px;
+}
+#container #playerBattleInfo #playerHealthBarWrapper {
+  position: relative;
+}
+#container #playerBattleInfo #playerHealthBarWrapper #playerHealthBar {
+  height: 5px;
+  margin-top: 10px;
+  background-color: #ccc;
+}
+#container #playerBattleInfo #playerHealthBarWrapper #playerFullHealthBar {
+  height: 5px;
+  background-color: #008000;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
 }/*# sourceMappingURL=styles.css.map */
