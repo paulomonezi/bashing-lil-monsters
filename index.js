@@ -171,7 +171,7 @@ function animate() {
                 overlappingArea > player.width * player.height / 2
                 && Math.random() < 0.01
             ) {
-                console.log('asdasd')
+                console.log('Activate Battle')
                 battle.initiated = true
                 break
             }
