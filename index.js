@@ -14,8 +14,6 @@ for (let i = 0; i < battleZonesData.length; i += 70) {
     battleZonesMap.push(battleZonesData.slice(i, 70 + i))
 }
 
-console.log(battleZonesMap)
-
 const boundaries = []
 const offset = {
     x: -735,
@@ -52,8 +50,6 @@ battleZonesMap.forEach((row, i) => {
     })
 })
 
-console.log(battleZones)
-
 const image = new Image()
 image.src = './src/images/PelletTown.png'
 
@@ -79,7 +75,8 @@ const player = new Sprite({
     },
     image: playerDownImage,
     frames: {
-        max: 4
+        max: 4,
+        hold: 10
     },
     sprites: {
         up: playerUpImage,
@@ -136,7 +133,7 @@ const battle = {
 }
 
 function animate() {
-    window.requestAnimationFrame(animate)
+    const animationId = window.requestAnimationFrame(animate)
     background.draw()
     boundaries.forEach(boundary => {
         boundary.draw()
@@ -147,7 +144,7 @@ function animate() {
     player.draw()
     foreground.draw()
 
-    player.moving = false
+    player.animate = false
     let moving = true
 
     if (battle.initiated) return
@@ -174,7 +171,8 @@ function animate() {
                 overlappingArea > player.width * player.height / 2
                 && Math.random() < 0.01
             ) {
-                console.log('Activate Battle')
+                // stops current loop
+                window.cancelAnimationFrame(animationId)
                 battle.initiated = true
                 gsap.to('#overlappingDiv', {
                     opacity: 1,
@@ -184,7 +182,15 @@ function animate() {
                     onComplete() {
                         gsap.to('#overlappingDiv', {
                             opacity: 1,
-                            duration: 0.4
+                            duration: 0.4,
+                            onComplete() {
+                                // new animation loop
+                                animateBattle()
+                                gsap.to('#overlappingDiv', {
+                                    opacity: 0,
+                                    duration: 0.4,
+                                })
+                            }
                         })
                     }
                 })
@@ -194,7 +200,7 @@ function animate() {
     }
 
     if (keys.w.pressed && lastKey === 'w') {
-        player.moving = true
+        player.animate = true
         player.image = player.sprites.up
 
         for (let i = 0; i < boundaries.length; i++) {
@@ -220,7 +226,7 @@ function animate() {
             movables.forEach(movable => { movable.position.y += 3 })
     }
     else if (keys.a.pressed && lastKey === 'a') {
-        player.moving = true
+        player.animate = true
         player.image = player.sprites.left
         for (let i = 0; i < boundaries.length; i++) {
             const boundary = boundaries[i]
@@ -244,7 +250,7 @@ function animate() {
             movables.forEach(movable => { movable.position.x += 3 })
     }
     else if (keys.s.pressed && lastKey === 's') {
-        player.moving = true
+        player.animate = true
         player.image = player.sprites.down
         for (let i = 0; i < boundaries.length; i++) {
             const boundary = boundaries[i]
@@ -267,7 +273,7 @@ function animate() {
             movables.forEach(movable => { movable.position.y -= 3 })
     }
     else if (keys.d.pressed && lastKey === 'd') {
-        player.moving = true
+        player.animate = true
         player.image = player.sprites.right
         for (let i = 0; i < boundaries.length; i++) {
             const boundary = boundaries[i]
@@ -290,7 +296,58 @@ function animate() {
             movables.forEach(movable => { movable.position.x -= 3 })
     }
 }
-animate()
+// animate()
+
+const battleBackgroundImage = new Image()
+battleBackgroundImage.src = './src/images/battleBackground.png'
+const battleBackground = new Sprite({
+    position: {
+        x: 0,
+        y: 0
+    },
+    image: battleBackgroundImage
+})
+
+const draggleImage = new Image()
+draggleImage.src = './src/images/sprites/monsters/draggleSprite.png'
+const draggle = new Sprite({
+    position: {
+        x: 800,
+        y: 100
+    },
+    image: draggleImage,
+    frames: {
+        max: 4,
+        hold: 30
+    },
+    animate: true
+})
+
+const embyImage = new Image()
+embyImage.src = './src/images/sprites/monsters/embySprite.png'
+const emby = new Sprite({
+    position: {
+        x: 280,
+        y: 325
+    },
+    image: embyImage,
+    frames: {
+        max: 4,
+        hold: 30
+    },
+    animate: true
+})
+
+
+
+function animateBattle() {
+    window.requestAnimationFrame(animateBattle)
+    battleBackground.draw()
+    draggle.draw()
+    emby.draw()
+}
+
+animateBattle()
 
 let lastKey = ''
 window.addEventListener('keydown', (e) => {
