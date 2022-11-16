@@ -45,6 +45,16 @@
     right: 0;
     border-top: 4px #000 solid;
     display: flex;
+    #dialogBox{
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background-color: #FFF;
+      padding: 12px;
+      display: none;
+    }
     #moves {
       width: 66.66%;
       display: grid;
