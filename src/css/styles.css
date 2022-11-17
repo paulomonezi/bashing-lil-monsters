@@ -42,7 +42,7 @@
   border-top: 4px #000 solid;
   display: flex;
 }
-#container #battleOptions #dialogBox {
+#container #battleOptions #dialogueBox {
   position: absolute;
   top: 0;
   bottom: 0;
