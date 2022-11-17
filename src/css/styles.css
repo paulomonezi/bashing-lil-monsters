@@ -51,6 +51,7 @@
   background-color: #FFF;
   padding: 12px;
   display: none;
+  cursor: pointer;
 }
 #container #battleOptions #moves {
   width: 66.66%;
