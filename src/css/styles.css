@@ -58,7 +58,7 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr);
 }
-#container #battleOptions #moveType {
+#container #battleOptions #attackType {
   border-left: 4px #000 solid;
   width: 33.33%;
   display: flex;
