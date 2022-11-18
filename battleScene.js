@@ -19,9 +19,13 @@ emby.attacks.forEach(attack => {
     document.querySelector('#attacksBox').append(button)
 })
 
+let battleAnimationId
+
 function animateBattle() {
-    window.requestAnimationFrame(animateBattle)
+    battleAnimationId = window.requestAnimationFrame(animateBattle)
     battleBackground.draw()
+
+    console.log(battleAnimationId)
 
     renderedSprites.forEach((sprite) => {
         sprite.draw()
@@ -46,7 +50,20 @@ document.querySelectorAll('button').forEach((button) => {
             queue.push(() => {
                 draggle.faint()
             })
-            return
+            queue.push(() => {
+                //fade back to black and go to overworld map again
+                gsap.to('#overlappingDiv', {
+                    opacity: 1,
+                    onComplete: () => {
+                        cancelAnimationFrame(battleAnimationId)
+                        animate()
+                        document.querySelector('#userInterface').style.display = 'none'
+                        gsap.to('#overlappingDiv', {
+                            opacity: 0
+                        })
+                    }
+                })
+            })
         }
         // emby or enemy attacks here
         const randomAttack = draggle.attacks[Math.floor(Math.random() * draggle.attacks.length)]
@@ -57,7 +74,15 @@ document.querySelectorAll('button').forEach((button) => {
                 recipient: emby,
                 renderedSprites
             })
+            if (emby.health <= 0) {
+                queue.push(() => {
+                    emby.faint()
+                })
+
+            }
         })
+
+
     })
 
     button.addEventListener('mouseenter', (e) => {
