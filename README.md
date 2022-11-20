@@ -9,7 +9,7 @@ Welcome, stay awhile and listen :)
 
 ## What is this project about?
 
-It's about developing a _2d top-down game pokemon-like turn-based rpg_, from scrach. The main goal was pratice (a lot) of programming logic, solving a lot of problems and issues that i never had a chance to think about before, but all of this, in a fun way.
+It's about developing a _2d top-down game pokemon-like turn-based rpg_, from scrach. The main goal was pratice programming logic, solving a lot of problems and issues that i never had a chance to think about before, but all of this, in a fun way.
 
 ## How to play?
 Click here: https://paulomonezi.github.io/bashinglilmonsters/ <br>
@@ -36,8 +36,8 @@ Finishing the battle and back to the main map, making sure of restarting every s
 
 ## What i've learned
 All the above, i assume.<br>
-And make scalable code, wich is a awesome time saving on the future.<br>
-For example, if i want to add new attacks, i can just create a new animation, add the attacks properties on `attacks.js` and assign to any monster that i want. This is automatically populate the attack buttons when i've enter a battle, just awesome!
+And make scalable code, wich is a awesome time saving for the future.<br>
+For example, if i want to add new attacks, i can just create a new animation, add the attacks properties on `attacks.js` and assign to any monster that i want. This automatically populate the attack buttons when i've enter on a battle, just awesome!
 
 ### Special Thanks
 Huge special thanks to Chris, from https://chriscourses.com to teach me all the stuff i've learned on this project.<br>
