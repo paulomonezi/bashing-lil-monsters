@@ -41,6 +41,7 @@ For example, if i want to add new attacks, i can just create a new animation, ad
 
 ### Special Thanks
 Huge special thanks to Chris, from https://chriscourses.com to teach me all the stuff i've learned on this project.<br>
+Link to this tutorial: https://www.youtube.com/watch?v=yP5DKzriqXA <br>
 You rock, Chris!
 
 #### Yes, on battle ending, that is Victory Fanfare from FF VII!
