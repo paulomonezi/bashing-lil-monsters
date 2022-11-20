@@ -301,7 +301,6 @@ function animate() {
             movables.forEach(movable => { movable.position.x -= 3 })
     }
 }
-// animate()
 
 let lastKey = ''
 window.addEventListener('keydown', (e) => {

@@ -120,13 +120,12 @@ function animateBattle() {
 }
 
 animate()
-// initBattle()
-// animateBattle()
 
 document.querySelector('#dialogueBox').addEventListener('click', (e) => {
     if (queue.length > 0) {
         queue[0]()
         queue.shift()
+        audio.victory.stop()
     } else e.currentTarget.style.display = 'none'
 
 })
