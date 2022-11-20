@@ -12,8 +12,9 @@ Welcome, stay awhile and listen :)
 It's about developing a _2d top-down game pokemon-like turn-based rpg_, from scrach. The main goal was pratice (a lot) of programming logic, solving a lot of problems and issues that i never had a chance to think about before, but all of this, in a fun way.
 
 ## How to play?
-Use ASDW key to move around, explore the map and when you feel ready, step on the higher grass to encounter the battle.
-Click on any attack to fight with your opponent
+Click here: https://paulomonezi.github.io/bashinglilmonsters/ <br>
+Use ASDW key to move around, explore the map and when you feel ready, step on the higher grass to encounter the battle.<br>
+Click on any attack to fight with your opponent<br>
 Have fun
 
 ## What i've used
