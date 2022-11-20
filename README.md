@@ -2,6 +2,11 @@
 
 Welcome, stay awhile and listen :)
 
+<img src="./src/gifs/readme-map.gif" alt="gif showing the game map">
+<br><br><br>
+<img src="./src/gifs/readme-battle.gif" alt="gif showing the battle system">
+
+
 ## What is this project about?
 
 It's about developing a _2d top-down game pokemon-like turn-based rpg_, from scrach. The main goal was pratice (a lot) of programming logic, solving a lot of problems and issues that i never had a chance to think about before, but all of this, in a fun way.
@@ -36,3 +41,5 @@ For example, if i want to add new attacks, i can just create a new animation, ad
 ### Special Thanks
 Huge special thanks to Chris, from https://chriscourses.com to teach me all the stuff i've learned on this project.<br>
 You rock, Chris!
+
+#### Yes, on battle ending, that is Victory Fanfare from FF VII!
