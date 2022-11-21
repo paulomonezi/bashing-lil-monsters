@@ -13,7 +13,7 @@ It's about developing a _2d top-down game pokemon-like turn-based rpg_, from scr
 
 ## How to play?
 Click here: https://paulomonezi.github.io/bashinglilmonsters/ <br>
-Use ASDW key to move around, explore the map and when you feel ready, walk on the darker grass to encounter the savage monsters.<br>
+Use ASDW key to move around, explore the map and when you feel ready, walk on the darker grass to encounter the wild monsters.<br>
 Click on any attack to fight with your opponent<br>
 Have fun
 
