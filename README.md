@@ -44,4 +44,7 @@ Huge special thanks to Chris, from https://chriscourses.com to teach me all the 
 Link to this tutorial: https://www.youtube.com/watch?v=yP5DKzriqXA <br>
 You rock, Chris!
 
+### WIP
+I'm still working on this project, planning to add more random wild encounters, plenty of attacks, effectiveness and etc.
+
 #### Yes, on battle ending, that is Victory Fanfare from FF VII!
