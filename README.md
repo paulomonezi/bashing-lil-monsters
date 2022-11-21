@@ -18,6 +18,8 @@ Click on any attack to fight with your opponent<br>
 Have fun
 
 ## What i've used
+- Assets from https://itch.io/game-assets
+- Tiled _to create map layers_
 - HTML Canvas
 - Sass
 - Javascript
