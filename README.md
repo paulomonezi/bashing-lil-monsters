@@ -25,11 +25,8 @@ Click on any attack to fight with your opponent<br><br>
 - **Have Fun!**<br><br>
 
 ## Techs used
-<<<<<<< HEAD
 - Assets from https://itch.io/game-assets
 - Tiled _to create map layers_
-=======
->>>>>>> b134f69bfd5ab635f0fe74096b1a4be7c96b4064
 - HTML Canvas
 - Sass
 - Javascript
@@ -58,9 +55,6 @@ Link to this tutorial: https://www.youtube.com/watch?v=yP5DKzriqXA <br>
 You rock, Chris!
 
 #### Yes, on battle ending, that is Victory Fanfare from FF VII!
-<<<<<<< HEAD
 
 ### WIP
 I'm still working on this project, planning to add more random wild encounters, plenty of attacks, effectiveness and etc.
-=======
->>>>>>> b134f69bfd5ab635f0fe74096b1a4be7c96b4064
