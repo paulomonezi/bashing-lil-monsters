@@ -27,6 +27,8 @@ Em batalha, escolha o ataque e clique para executar a ação<br><br>
 - **Divirta-se!**<br><br>
 
 ## Techs usadas
+- Assets from https://itch.io/game-assets
+- Tiled _to create map layers_
 - HTML Canvas
 - Sass
 - Javascript
@@ -56,6 +58,7 @@ Agradecimento imenso ao Chris, do https://chriscourses.com Por me ensinar todas 
 Link para esse tutorial: https://www.youtube.com/watch?v=yP5DKzriqXA <br>
 Valeu, Chris!
 
-
-
 #### Sim, no final da batalha você escuta Victory Fanfare do FF VII!
+
+### WIP
+Esse é um projeto que ainda está em desenvolvimento, tenho planos para adicionar mais encontros com monstros, vários novos ataques, efetividades e etc.
