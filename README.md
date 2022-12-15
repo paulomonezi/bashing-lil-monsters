@@ -18,7 +18,7 @@ It's about developing a _2d top-down game pokemon-like (gb/gba) turn-based_, fro
 
 ## How to Play?
 -  **Link**: <br>
-👉 https://paulomonezi.github.io/bashinglilmonsters/ <br><br>
+👉 https://paulomonezi.github.io/bashing-lil-monsters/ <br><br>
 -  **Commands**: <br>
 Use ASDW key to move around, explore the map and when you feel ready, step on the higher grass (the darker one) to encounter the battle.<br>
 Click on any attack to fight with your opponent<br><br>
