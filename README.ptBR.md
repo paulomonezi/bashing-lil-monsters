@@ -20,7 +20,7 @@ _Welcome, stay awhile and listen :)_
 
 ## Como jogar?
 -  **Link**: <br>
-👉 https://paulomonezi.github.io/bashinglilmonsters/ <br><br>
+👉 https://paulomonezi.github.io/bashing-lil-monsters/ <br><br>
 -  **Controles**: <br>
 Use as teclas ASDW para se mover, explore o mapa, e quando se sentir pronto, ande sobre a grama alta (a mais escura).<br>
 Em batalha, escolha o ataque e clique para executar a ação<br><br>
