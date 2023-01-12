@@ -16,10 +16,10 @@ Welcome, stay awhile and listen :)
 
 It's about developing a _2d top-down game pokemon-like (gb/gba) turn-based_, from scrach. The main goal was pratice (a lot) of programming logic, solving a lot of problems and issues that i never had a chance to think about before, but all of this, in a fun way.
 
-## 🕹️ How to Play?
-- 🔗 **Link**: <br>
-👉 https://paulomonezi.github.io/bashinglilmonsters/ <br><br>
-- 🎮 **Commands**: <br>
+## How to Play?
+-  **Link**: <br>
+👉 https://paulomonezi.github.io/bashing-lil-monsters/ <br><br>
+-  **Commands**: <br>
 Use ASDW key to move around, explore the map and when you feel ready, step on the higher grass (the darker one) to encounter the battle.<br>
 Click on any attack to fight with your opponent<br><br>
 - 🥳 **Have Fun!**<br><br>
