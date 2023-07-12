@@ -36,12 +36,12 @@ Click on any attack to fight with your opponent<br><br>
 
 ## 💭 Wich difficulties i've passed through?
 
-The project was made literally from scrach, so, here we go:
-#### - Learn how to work with spritesheets.
-Spritesheets are pretty common on these kind of games, absolutely bread and butter. But was kinda challenging to think about how to render the character sprite properly, how to create boundaries on the edges of the map, and battlezones (aka high grass hehe).
+The project was made literally from scratch, so, here we go:
+#### - Become familiar with spritesheets.
+Spritesheets are pretty common on these kind of games, absolutely bread and butter. But was kinda challenging to think about how to render the character sprite properly, how to create boundaries on the edges of the map, and implement battlezones (aka high grass hehe).
 
 #### - Make the whole map-battle-map transition
-This one was quite hard at the beginning, transitioning from the map from a battle scene was a little bit more complex than i though, stop all animations related to map and start to render a new scene, with new sprites, attacks and etc. 
+This one was initially fairly challenging because switching between a battle scene and the map was a little bit more complex than i though, stop all animations related to map and start to render a new scene, with new sprites, attacks and etc. 
 Finishing the battle and back to the main map, making sure of restarting every single variable related to battles before we encounter another battle.
 GSAPjs lb was pretty useful here :D
 
